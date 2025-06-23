@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segitiga Fnsli</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand text-black" href="#segitiga">Segitiga</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" href="#keliling">Keliling</a>
+                        <a class="nav-link active" href="#luas">Luas</a>
+                        <!-- <a class="nav-link disabled" aria-disabled="true">Disabled</a> -->
+                    </div>
+                </div>
+            </div>
+    </nav>
+    </header>
+    <div class="d-flex flex-column align-items-center mt-5 pt-3" id="segitiga">
+        <img src="media/logo.png" alt="Logo Segitiga" width="20%">
+        <h1>Segitiga</h1>
+        <p><b>By:</b> Fansoli Ibnu Mustafa<br><center>Senin, 23 Juni 2025.</center></p>
+    </div>
+
+    <hr>
+    <div class="d-flex justify-content-center mt-3" id="keliling">
+        <form onsubmit="htgkeliling(); return false;">
+            <table class="table table-borderless">
+                <tr>
+                    <th colspan="2">
+                        <div class="text-center">
+                            <h3><b>Hitung Keliling Segitiga</b></h3>
+                        </div>
+                    </th>
+                </tr>
+                <tr>
+                    <td>Sisi 1</td>
+                    <td><input type="number" id="sisi1" required></td>
+                </tr>
+                <tr>
+                    <td>Sisi 2</td>
+                    <td><input type="number" id="sisi2" required></td>
+                </tr>
+                <tr>
+                    <td>Sisi 3</td>
+                    <td><input type="number" id="sisi3" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div class="d-flex justify-content-end">
+                            <button class="btn btn-success" type="submit">Hitung</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" id="hasilkeliling"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <hr>
+    <div class="d-flex justify-content-center mt-3" id="luas">
+        <form onsubmit="htgluas(); return false;">
+            <table class="table table-borderless">
+                <tr>
+                    <th colspan="2">
+                        <div class="text-center">
+                            <h3><b>Hitung Luas Segitiga</b></h3>
+                        </div>
+                    </th>
+                </tr>
+                <tr>
+                    <td>Alas</td>
+                    <td><input type="number" id="alas" required></td>
+                </tr>
+                <tr>
+                    <td>Tinggi</td>
+                    <td><input type="number" id="tinggi" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div class="d-flex justify-content-end">
+                            <button type="submit" class="btn btn-success">Hitung</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" id="hasilluas"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
