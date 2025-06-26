@@ -26,7 +26,7 @@ function htgluas(){
 
         document.getElementById("hasilluas").innerText =
         "L = 1/2 x alas x tinggi\n" +
-        "K = 1/2 x " + alas + " x " + tinggi +
-        "\nK = " + luas;
+        "L = 1/2 x " + alas + " x " + tinggi +
+        "\nL = " + luas;
     }
 }
